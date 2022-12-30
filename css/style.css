@@ -1,0 +1,115 @@
+:root{
+    --color1:#5ba3ab;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+    -webkit-scrollbar-width: thin;
+    scrollbar-width: thin;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.all-content{
+    max-width: 420px;
+    margin: auto;
+    min-height: 100vh;
+    background-color: #ebebeb;
+}
+.top-nav1{
+    background-color: #ebebeb;
+    height: 60px;
+    width: 100%;
+    padding: 0 25px;
+}
+.top-nav1 a{
+    color: var(--color1);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.inner-container{
+    padding: 0 25px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+.links a{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 15px 0 #93bfc8;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);
+    transition: all 0.3s;
+    /* font-size: 18px; */
+    position: relative;
+}
+.links a .text{
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    font-weight: bold;
+    width: max-content;
+}
+.links a:hover{
+    box-shadow: 0 0 8px 5px #93bfc8;
+}
+
+
+.item-groups-nav{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.item-group-tab{
+    width: 120px;
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center;
+}
+.item-group-tab img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.tab-target{
+    margin-top: 15px;
+}
+.tab-target .items-group:not(:nth-child(1)){
+    display: none;
+}
+.items{
+    padding-bottom: 20px;
+}
+.item{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    align-items: stretch;
+    margin: 15px 0;
+    box-shadow: 0 0 5px #555;
+}
+.item .text{
+    flex: 1;
+    padding: 10px;
+}
+.item img{
+    border-radius: 10px 0 0 10px;
+    width: 140px;
+}
