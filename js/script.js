@@ -12,4 +12,20 @@ $(document).ready(function() {
             $(this).parent().scrollLeft(navScrollLeft +123)
         }
     })
+
+    //Categories toggle
+    $('.item-group-tab').click(function(){
+        $('.item-group-tab').removeClass('active')
+        $(this).addClass('active')
+
+    })
+
+    $('.cart-page').hide()
+    $('.cart-btn').click(function () { 
+        $('.cart-page').show(300)
+     })
+    $('.close-cart').click(function () { 
+        $('.cart-page').hide(100)
+     })
+
 })

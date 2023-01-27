@@ -18,6 +18,7 @@ a,a:hover{
     margin: auto;
     min-height: 100vh;
     background-color: #ebebeb;
+    position: relative;
 }
 .top-nav1{
     background-color: #ebebeb;
@@ -85,16 +86,19 @@ a,a:hover{
     display: block;
     border-radius: 5px;
 }
+.item-group-tab.active img{
+    box-shadow: 0 0 10px #07616b;
+}
 .tab-target{
     margin-top: 15px;
 }
 .tab-target .items-group:not(:nth-child(1)){
     display: none;
 }
-.items{
+.products{
     padding-bottom: 20px;
 }
-.item{
+.product{
     background-color: #fff;
     display: flex;
     width: 100%;
@@ -103,11 +107,61 @@ a,a:hover{
     margin: 15px 0;
     box-shadow: 0 0 5px #555;
 }
-.item .text{
+.product .text{
     flex: 1;
     padding: 10px;
 }
-.item img{
+.product img{
     border-radius: 10px 0 0 10px;
     width: 140px;
+}
+
+.add-to-cart-btn{
+    display: inline-block;
+    margin-left: 15px;
+}
+.cart-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 120;
+}
+.count-div{
+    max-width: 250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.count-div input{
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.count-div .plus-btn,
+.count-div .minus-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.close-cart{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-cart:hover{
+    opacity: 0.8;
+    color: #f1f1f1;
 }
