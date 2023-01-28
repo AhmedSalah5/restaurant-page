@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.item-group-tab').click(function(e){
         e.preventDefault()
         $('.items-group').hide()
-        $($(this).attr('href')).show(300)
+        $($(this).attr('href')).show()
         let navLeft = Math.ceil($(this).parent().offset().left)
         let tabLeft = Math.ceil($(this).offset().left)
         let navScrollLeft = $('.item-groups-nav').scrollLeft();
