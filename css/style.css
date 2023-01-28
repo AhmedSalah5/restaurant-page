@@ -128,6 +128,7 @@ a,a:hover{
     min-height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 120;
+    display: none;
 }
 .count-div{
     max-width: 250px;

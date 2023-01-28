@@ -184,7 +184,7 @@ var shoppingCart = (function() {
                 </div>
             </td>
             <td>${cartArray[i].price * cartArray[i].count}</td>
-            <td><button class="btn btn-outline-danger"><i class="fa fa-trash fa-fw"></i></button></td>
+            <td><button class="btn btn-outline-danger delete"><i class="fa fa-trash fa-fw"></i></button></td>
         </tr>
         `)
     }
@@ -194,7 +194,7 @@ var shoppingCart = (function() {
   
   // Delete item button
   $('.added-items').on("click", ".delete", function(event) {
-    var name = $(this).data('name')
+    var name = $(this).parents('tr').find($('[data-name]')).attr('data-name')
     shoppingCart.removeItemFromCartAll(name);
     displayCart();
   })
