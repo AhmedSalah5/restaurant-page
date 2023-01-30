@@ -151,6 +151,7 @@ var shoppingCart = (function() {
     var name = $(this).parents('.product').find($('[data-name]')).attr('data-name');
     var price = Number($(this).parents('.product').find($('[data-price]')).attr('data-price'));
     shoppingCart.addItemToCart(name, price, 1);
+    $('.cart-count').text($('.cart-items tbody tr').length)
     displayCart();
   });
   
@@ -158,6 +159,7 @@ var shoppingCart = (function() {
   $('.clear-cart-btn').click(function(e) {
     e.preventDefault()
     shoppingCart.clearCart()
+    $('.cart-count').text($('.cart-items tbody tr').length)
     displayCart()
   })
 
@@ -190,12 +192,14 @@ var shoppingCart = (function() {
     }
 
     $('.total').text(shoppingCart.totalCart().toFixed(2));
+    $('.cart-count').text($('.cart-items tbody tr').length)
   }
   
   // Delete item button
   $('.added-items').on("click", ".delete", function(event) {
     var name = $(this).parents('tr').find($('[data-name]')).attr('data-name')
     shoppingCart.removeItemFromCartAll(name);
+    
     displayCart();
   })
   

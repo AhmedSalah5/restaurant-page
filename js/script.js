@@ -28,4 +28,19 @@ $(document).ready(function() {
         $('.cart-page').hide(100)
      })
 
+
+     //Show cart notifications
+    function showAlert(seconds) { 
+        $('#liveToast').show()
+        setTimeout(function() {
+            $('#liveToast').hide()
+        },seconds*1000)
+     }
+
+     $('.cart-count').text($('.cart-items tbody tr').length)
+     $('.add-to-cart-btn').click(function() {
+        showAlert(2)
+        $('.cart-count').text($('.cart-items tbody tr').length)
+     })
+
 })

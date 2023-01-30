@@ -57,7 +57,7 @@
 					<div class="links">
 						<a href=""><i class="fa fa-info fa-lg fa-fw"></i><span class="text">معلومات</span></a>
 						<a href=""><i class="fab fa-firefox fa-lg fa-fw"></i><span class="text">الحساسية</span></a>
-						<a href="#" class="cart-btn"><i class="fa fa-shopping-cart fa-lg fa-fw"></i><span class="text">السلة</span></a>
+						<a href="#" class="cart-btn"><i class="fa fa-shopping-cart fa-lg fa-fw"></i><span class="text">السلة</span><span class="cart-count">0</span></a>
 						<a href=""><i class="fab fa-whatsapp fa-lg fa-fw"></i><span class="text">تواصل معنا</span></a>
 						<a href=""><i class="fa fa-envelope fa-lg fa-fw"></i><span class="text">التقييم</span></a>
 					</div>
@@ -310,7 +310,7 @@
 					<div class="added-items">
 						<h4>الأصناف التي تم إضافتها</h4>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-8">
 								<div class="cart-items">
 									<div class="table-responsive">
 										<table class="table align-middle text-center">
@@ -331,7 +331,7 @@
 													<td></td>
 													<td></td>
 													<td></td>
-													<td><span class="total"></span></td>
+													<td><span class="total fw-bold text-success"></span></td>
 													<td></td>
 												</tr>
 											</tfoot>
@@ -349,6 +349,15 @@
 				</div>
 			</div>
 		</div>
+
+				<!-- Notifications box -->
+				<div class="position-fixed bottom-0 end-0" style="z-index: 11">
+					<div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+						<div class=" alert alert-success">
+							تمت الإضافة للسلة
+						</div>
+					</div>
+				</div>
 
 
 			<script src="js/jquery-3.6.0.min.js"></script>

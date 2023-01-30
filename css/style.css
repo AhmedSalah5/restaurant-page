@@ -70,6 +70,24 @@ a,a:hover{
     box-shadow: 0 0 8px 5px #93bfc8;
 }
 
+.cart-btn{
+    position: relative;
+}
+.cart-count{
+    position: absolute;
+    font-size: 12px;
+    background-color: red;
+    color: #fff;
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+
 .item-groups-nav{
     overflow-x: auto;
     white-space: nowrap;
@@ -165,4 +183,11 @@ a,a:hover{
 .close-cart:hover{
     opacity: 0.8;
     color: #f1f1f1;
+}
+.toast{
+    padding: 0;
+    border: none;
+    background-color: none;
+    text-align: center;
+    font-size: 18px;
 }
